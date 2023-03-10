@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href ="style.css">
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+        <form action ="https://dummy.com/">
+            <fieldset>
+                <label>Enter your first name: 
+                    <input type = "text" id="firstname" name ="firstName"></label>
+            
+                <label>Enter your last name: 
+                    <input type = "text" id ="secondname" name ="secondname"></label>
+
+                <label>Enter your Email: 
+                    <input type = "text" id ="email" name ="email"></label> 
+
+                <label>Create a New Password: 
+                    <input type = "text" id ="password" name ="password"></label>
+            </fieldset>
+            <fieldset>
+                <label><input type ="radio" name="PersonalAccount"> Personal Account
+                    </label>
+                <label><input type ="radio" name="BusinessAccount"> Business Account
+                </label>
+                <label><input type ="checkbox" name="Terms"> Terms and Conditions
+                </label>
+            </fieldset>
+            <fieldset>
+                    <label for = "picture">Upload a picture<input type = "file"></label>
+                    <label>Input your age in (years): <input type = "text" id="age" name ="age"></label>
+                    <label for ="how">How did you hear about us? </label>
+                    <select name ="how" id="how" name = "how">
+                        <option value = "friends">Friends</option>
+                        <option value = "family">Family</option>
+                        <option value = "ads">Ads</option>
+                    </select>
+                    <label for ="bio">Provide a bio: </label>
+                    <textarea id="bio" name ="bio" rows ="3" cols="30">
+                    I like coding on the beach...
+                    </textarea>
+                    
+            </fieldset>
+            <button type ="submit">Submit</button>
+
+                
+        </form>
+        
+    </body>
+</html>
